@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AOSP / Pixel 取色 -->
+    <color name="aosp_blue">#FF1A73E8</color>
+    <color name="aosp_blue_night">#FF8AB4F8</color>
+    <color name="aosp_green">#FF1E8E3E</color>
+    <color name="aosp_green_night">#FF81C995</color>
+    <color name="aosp_yellow">#FFF9AB00</color>
+    <color name="aosp_yellow_night">#FFFDD663</color>
+    <color name="aosp_red">#FFD93025</color>
+    <color name="aosp_red_night">#FFF28B82</color>
+
+    <!-- 语义色（夜间在 values-night 覆盖） -->
+    <color name="surgeon_accent">@color/aosp_blue</color>
+    <color name="surgeon_ok">@color/aosp_green</color>
+    <color name="surgeon_warn">@color/aosp_yellow</color>
+    <color name="surgeon_danger">@color/aosp_red</color>
+
+    <color name="on_accent">#FFFFFFFF</color>
+    <color name="on_accent_night">#FF202124</color>
+
+    <color name="bg_window">#FFF7F9FC</color>
+    <color name="bg_card">#FFFFFFFF</color>
+    <color name="bg_danger_chip">#FFFCE8E6</color>
+    <color name="text_primary">#FF202124</color>
+    <color name="text_secondary">#FF5F6368</color>
+    <color name="divider">#FFDADCE0</color>
+</resources>
