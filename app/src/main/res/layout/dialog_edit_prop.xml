@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="22dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="22dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/tv_prop_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Surgeon.Mono"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/tv_prop_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textAppearance="@style/TextAppearance.Surgeon.Body"
+        android:textIsSelectable="true" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_prop_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/props_new_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.Surgeon.Mono" />
+
+    <TextView
+        android:id="@+id/tv_prop_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/props_resetprop_summary"
+        android:textAppearance="@style/TextAppearance.Surgeon.Body"
+        android:textSize="12sp" />
+</LinearLayout>
