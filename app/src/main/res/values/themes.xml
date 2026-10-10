@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PartitionSurgeon" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Material3 主色 -->
+        <item name="colorPrimary">@color/surgeon_accent</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorSecondary">@color/surgeon_accent</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+
+        <!-- androidx.preference 仍依赖 AppCompat 的 control 属性，显式补齐避免解析失败 -->
+        <item name="colorAccent">@color/surgeon_accent</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/surgeon_accent</item>
+        <item name="colorControlHighlight">@color/divider</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+
+        <item name="android:colorBackground">@color/bg_window</item>
+        <item name="android:windowBackground">@color/bg_window</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- 全屏绘制，insets 由 MainActivity 手动处理 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+    </style>
+
+    <style name="TextAppearance.Surgeon.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Surgeon.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Surgeon.Mono" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>
